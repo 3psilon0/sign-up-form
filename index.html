@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <div class="side-banner">
+            <div class="website-title">
+                <img
+                    src="./assets/images/odin.png"
+                    alt="Odin Logo"
+                    class="website-title-logo"
+                />
+                <h1 class="website-title-text">Odin</h1>
+            </div>
+            <div class="credit-caption">
+                Photo by
+                <a
+                    href="https://unsplash.com/@artem_kniaz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    >Artem Kniaz</a
+                >
+                on
+                <a
+                    href="https://unsplash.com/photos/a-street-at-night-with-a-car-driving-down-it-wUs70tLRpS4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    >Unsplash</a
+                >
+            </div>
+        </div>
+        <div class="main-content">
+            <p class="content-desc">
+                All that is gold does not glitter, Not all those who wander are
+                lost; The old that is strong does not wither, Deep roots are not
+                reached by the frost. From the ashes a fire shall be woken, A
+                light from the shadows shall spring; Renewed shall be blade that
+                was broken, The crownless again shall be king.
+            </p>
+
+            <div class="form-container">
+                <h2>Register Now!</h2>
+                <form action="" method="post">
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="form-first-name">First Name:</label>
+                            <input
+                                type="text"
+                                id="form-first-name"
+                                name="first-name"
+                                placeholder="Frodo"
+                                required
+                                minlength="3"
+                                maxlength="35"
+                            />
+                        </div>
+                        <div class="form-input">
+                            <label for="form-last-name">Last Name:</label>
+                            <input
+                                type="text"
+                                id="form-last-name"
+                                name="last-name"
+                                placeholder="Baggins"
+                                required
+                                minlength="3"
+                                maxlength="35"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="form-email">Email:</label>
+                            <input
+                                type="email"
+                                id="form-email"
+                                name="email"
+                                placeholder="xyz@someplace.com"
+                                required
+                                maxlength="255"
+                            />
+                        </div>
+                        <div class="form-input">
+                            <label for="form-phone-number">Phone Number:</label>
+                            <input
+                                type="tel"
+                                id="form-phone-number"
+                                name="phone"
+                                placeholder="1234567890"
+                                maxlength="10"
+                                pattern="\d{10}"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="form-password">Password:</label>
+                            <input
+                                type="password"
+                                id="form-password"
+                                name="password"
+                                required
+                                minlength="8"
+                                maxlength="255"
+                            />
+                        </div>
+                        <div class="form-input">
+                            <label for="form-confirm-password"
+                                >Confirm Password:</label
+                            >
+                            <input
+                                type="password"
+                                id="form-confirm-password"
+                                name="confim-password"
+                                required
+                                minlength="8"
+                                maxlength="255"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-submit-container">
+                        <button type="submit" class="form-submit-button">
+                            Register
+                        </button>
+                        <p class="form-login-text">
+                            Already have an account?
+                            <a href="" class="form-login-link" href="#"
+                                >Log in</a
+                            >
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

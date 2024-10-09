@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./assets/fonts/Norse-Bold.otf") format("OpenType");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: wheat;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    font-family: 'Cabin';
+    background-image: linear-gradient(to right, black, #000311);
+}
+
+.side-banner {
+    background-image: url('./assets/images/bg-street.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    padding: 5rem;
+    height: auto;
+    width: 30vw;
+    color: wheat;
+}
+
+.credit-caption {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.website-title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgba(18, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.website-title-logo {
+    height: 76px;
+    width: 64px;
+    margin: 10px;
+}
+
+.website-title-text {
+    font-family: "Norse Bold", "Cabin", sans-serif;
+    font-size: 40px;
+}
+
+.main-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    width: 70vw;
+    padding: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content-desc {
+    text-align: left;
+    max-width: 45rem;
+    margin-bottom: 70px;
+}
+
+.form-container {
+    font-size: 16px;
+    background-color: #01091c;
+    padding: 2rem;
+    border: 1px solid rgb(89, 43, 6);
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    margin-bottom: 30px;
+}
+
+.form-input {
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    color: wheat;
+    font-size: 16px;
+    background-color: #04122d;
+    padding: 10px;
+    border: 1px solid #592b06;
+    border-radius: 15px;
+}
+
+.form-row input::placeholder {
+    font-style: italic;
+}
+
+.form-row input:focus {
+    outline: 0.15rem solid #592b06;
+}
+
+.form-row input:hover{
+    box-shadow: 0 5px 15px rgba(156, 77, 8, 0.4);
+}
+
+.form-row input:valid:focus {
+    outline: none;
+    border: 2px solid green;
+    box-shadow: 0 5px 15px rgba(0, 128, 0, 0.4);
+}
+
+.form-row input:invalid:focus {
+    outline: none;
+    border: 2px solid red;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+.form-submit-container {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.form-submit-button {
+    color: wheat;
+    font-size: 18px;
+    background-color: #261405;
+    border: 1px solid brown;
+    border-radius: 15px;
+    width: 235px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+
+.form-submit-button:hover {
+    box-shadow: 0 5px 15px rgba(156, 77, 8, 0.4);
+    cursor: pointer;
+}
+
+.form-login-text {
+    opacity: 0.5;
+    font-style: italic;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.form-login-link {
+    text-decoration: none;
+}
